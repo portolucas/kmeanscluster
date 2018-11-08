@@ -44,6 +44,12 @@
       <file name="$USER_HOME$/Desktop/python_exercises/ex008.py" timestamp="1540390473627">
         <mark key="[" line="1" column="0" />
       </file>
+      <file name="$USER_HOME$/Desktop/TP2/Code/clustering.py" timestamp="1541710091883">
+        <mark key="[" line="52" column="9" />
+        <mark key="]" line="52" column="8" />
+        <mark key="^" line="52" column="8" />
+        <mark key="." line="52" column="8" />
+      </file>
       <file name="$USER_HOME$/Desktop/python_exercises/ex001.py" timestamp="1540312586215">
         <mark key="[" line="0" column="0" />
       </file>
@@ -157,8 +163,8 @@
       <register name="1" type="2">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="&quot;" type="4">
+        <text />
       </register>
       <register name="2" type="2">
         <text encoding="base64">Cg==</text>

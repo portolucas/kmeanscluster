@@ -1,1 +1,1 @@
-# K-Means Cluster for data mining class at ufmg build in Py
+# K-Means Cluster for data mining class at UFMG  build in Py

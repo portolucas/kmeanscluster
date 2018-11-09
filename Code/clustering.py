@@ -17,7 +17,7 @@ scaler = preprocessing.StandardScaler().fit(data[['MONTH']])
 data['MONTH'] = scaler.transform((data[['MONTH']]))
 
 #K-Means Cluster
-kmeans = KMeans(n_clusters=3, init='random')
+kmeans = KMeans(n_clusters=3, init='k-means++', n_init=3)
 kmeans.fit(x)
 kmeans.cluster_centers_
 
@@ -27,23 +27,23 @@ print(labels)
 
 #Elbow for perfect K
 
-wcss = []
+#wcss = []
 
-for i in range(1, 11):
-    kmeans = KMeans(n_clusters= i, init='random')
-    kmeans.fit(x)
-    print(i, kmeans.inertia_)
-    wcss.append(kmeans.inertia_)
+#for i in range(1, 11):
+    #kmeans = KMeans(n_clusters= i, init='k-means++')
+    #kmeans.fit(x)
+    #print(i, kmeans.inertia_)
+    #wcss.append(kmeans.inertia_)
 
-plt.plot(range(1, 11), wcss)
-plt.title('O Método Elbow')
-plt.xlabel('O número de clusters')
-plt.ylabel('WSS') #within cluster sum of squares
-print(plt.show())
+#plt.plot(range(1, 11), wcss)
+#plt.title('O Método Elbow')
+#plt.xlabel('O número de clusters')
+#plt.ylabel('WSS') #within cluster sum of squares
+#(plt.show())
 
 # Graph with centroids and clusters
-plt.scatter(x[:, 0], x[:, 1], s = 3, c = kmeans.labels_)
-plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=100, c='red', label='Centroids')
+plt.scatter(x[:, 0], x[:, 1], c = kmeans.labels_)
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=50, c='red', label='Centroids')
 plt.title('Month and hour of Boston Crimes in 2018 and Centroids')
 plt.xlabel('MONTH')
 plt.ylabel('HOUR')

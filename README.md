@@ -24,7 +24,7 @@ Now, we can instantiate the K-means. We have the number of clusters and that is 
 
 Sixth, go plot the graphs and centroids. What is a centroid? Centroid is like a grouping point or gravity point. There are you clusters.
 
-Seventh, we need know how much we go it right. Calinski and Harabaz Score can help we.
+Seventh, we need know how much we go it right. Calinski and Harabaz Score can help us.
 
 Twitter: @feedlucas
 

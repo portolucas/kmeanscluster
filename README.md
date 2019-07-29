@@ -26,7 +26,7 @@ Sixth, go plot the graphs and centroids. What is a centroid? Centroid is like a 
 
 Seventh, we need know how much we go it right. Calinski and Harabaz Score can help we.
 
-tt: @lucasfeed
+Twitter: @feedlucas
 
 
 
